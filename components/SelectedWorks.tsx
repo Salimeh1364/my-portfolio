@@ -14,8 +14,9 @@ export default function SelectedWorks({ lang }: SelectedWorksProps) {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section id="work" className="max-w-6xl mx-auto px-8 py-20 border-t border-[#E8DFC8]">
-      <h2 className="text-2xl font-light tracking-widest text-center uppercase mb-16 text-[#2C2825]">
+    <section id="work" className="max-w-6xl mx-auto px-8 py-20 border-t border-[#E8DFC8] dark:border-stone-800">
+      {/* تیتر اصلی: اضافه شدن dark:text-[#EFE5DC] */}
+      <h2 className="text-2xl font-light tracking-widest text-center uppercase mb-16 text-[#2C2825] dark:text-[#EFE5DC]">
         {t.projectsTitle}
       </h2>
 
@@ -36,7 +37,8 @@ export default function SelectedWorks({ lang }: SelectedWorksProps) {
                 [ {project.title} Preview ]
               </span>
             </div>
-            <h3 className="text-lg font-serif text-[#2C2825] group-hover:text-[#C86D51] transition-colors">
+            {/* عنوان پروژه: اضافه شدن dark:text-[#EFE5DC] */}
+            <h3 className="text-lg font-serif text-[#2C2825] dark:text-[#EFE5DC] group-hover:text-[#C86D51] dark:group-hover:text-[#C86D51] transition-colors">
               {project.title}
             </h3>
             <p className="text-xs text-[#C86D51] font-semibold uppercase tracking-wider mt-1">
