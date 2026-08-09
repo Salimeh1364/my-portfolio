@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import SelectedWorks from "../components/SelectedWorks";
@@ -10,6 +10,15 @@ import { Language } from "../components/Dictionary";
 
 export default function Home() {
   const [lang, setLang] = useState<Language>("de");
+
+  // Update document title based on selected language
+  useEffect(() => {
+    if (lang === "de") {
+      document.title = "Salimeh | Frontend Entwicklerin";
+    } else {
+      document.title = "Salimeh | Frontend Developer";
+    }
+  }, [lang]);
 
   return (
     <div lang={lang} translate="no" className="notranslate">
