@@ -3,16 +3,26 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Salimeh Miranipour | Frontend Developer & UI Specialist",
-  description: "Portfolio of Salimeh Miranipour, a Frontend Developer specialized in React, Next.js, and TypeScript based in Germany.",
-  keywords: ["Frontend Developer", "React Developer", "Next.js", "Web Developer", "Salimeh Miranipour Portfolio"],
+  title: "Salimeh Miranipour | Frontend Developer",
+  description:
+    "Frontend Developer in Berlin with almost four years of experience building React dashboards, single-page applications and reusable UI components.",
+  keywords: [
+    "Frontend Developer",
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "Next.js",
+    "Salimeh Miranipour",
+    "Berlin",
+  ],
   authors: [{ name: "Salimeh Miranipour" }],
   verification: {
     google: "tMUB1uKpvwALP5YBH7BtDgLxrpRmjYT8XQ-hxv8Zai0",
   },
   openGraph: {
-    title: "Salimeh Miranipour | Frontend Developer Portfolio",
-    description: "Explore selected works and frontend projects by Salimeh Miranipour.",
+    title: "Salimeh Miranipour | Frontend Developer",
+    description:
+      "Frontend Developer in Berlin with almost four years of experience building React dashboards, single-page applications and reusable UI components.",
     type: "website",
   },
   icons: {

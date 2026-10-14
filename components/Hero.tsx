@@ -20,16 +20,18 @@ export default function Hero({ lang }: HeroProps) {
         className="flex-1 space-y-8"
       >
         {/* Subtitle */}
-        <p className="font-sans text-xs tracking-[0.3em] uppercase text-[#C86D51] dark:text-[#E07A5F] font-semibold">
-          {t.subtitle}
+        <p className="font-sans text-xs tracking-[0.2em] text-[#C86D51] dark:text-[#E07A5F] font-semibold">
+          {t.role}
         </p>
 
-        {/* Main Title - Fixing dark text bug in Dark Mode */}
         <h1 className="text-5xl md:text-7xl font-normal leading-[1.15] tracking-tight text-[#2C2825] dark:text-[#F3ECE4]">
-          {t.title}
+          {t.name}
         </h1>
 
-        {/* Description Text */}
+        <p className="font-sans text-sm tracking-wide text-[#6B6059] dark:text-[#D1C7BD]">
+          {t.location}
+        </p>
+
         <p className="font-sans text-[#6B6059] dark:text-[#D1C7BD] text-base leading-relaxed max-w-md font-light">
           {t.desc}
         </p>
@@ -60,7 +62,7 @@ export default function Hero({ lang }: HeroProps) {
       >
         <Image
           src="/Salimeh.png"
-          alt="Salimeh - Frontend Developer"
+          alt="Salimeh Miranipour, Frontend Developer"
           fill
           sizes="(max-width: 768px) 100vw, 320px"
           className="object-cover object-[center_top]"

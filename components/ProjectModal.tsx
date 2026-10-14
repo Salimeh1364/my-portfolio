@@ -42,7 +42,8 @@ export default function ProjectModal({
             <button
               type="button"
               onClick={onClose}
-              className="absolute top-6 right-6 z-20 w-10 h-10 rounded-full bg-[#EFE5DC] border border-[#D8C7B8] flex items-center justify-center text-[#2C2825] hover:bg-[#C86D51] hover:text-white transition-colors cursor-pointer"
+              aria-label={t.modalClose}
+              className="absolute top-4 right-4 z-20 w-7 h-7 rounded-full bg-[#EFE5DC] border border-[#D8C7B8] flex items-center justify-center text-xs text-[#2C2825] hover:bg-[#C86D51] hover:text-white transition-colors cursor-pointer"
             >
               ✕
             </button>

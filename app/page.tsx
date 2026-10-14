@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import SelectedWorks from "../components/SelectedWorks";
 import About from "../components/About";
+import ProfileSections from "../components/ProfileSections";
 import Contact from "../components/Contact";
 import { Language } from "../components/Dictionary";
 
@@ -14,9 +15,9 @@ export default function Home() {
   // Update document title based on selected language
   useEffect(() => {
     if (lang === "de") {
-      document.title = "Salimeh | Frontend Entwicklerin";
+      document.title = "Salimeh Miranipour | Frontend-Entwicklerin";
     } else {
-      document.title = "Salimeh | Frontend Developer";
+      document.title = "Salimeh Miranipour | Frontend Developer";
     }
   }, [lang]);
 
@@ -27,6 +28,7 @@ export default function Home() {
         <Hero lang={lang} />
         <SelectedWorks lang={lang} />
         <About lang={lang} />
+        <ProfileSections lang={lang} />
         <Contact lang={lang} />
       </main>
     </div>
