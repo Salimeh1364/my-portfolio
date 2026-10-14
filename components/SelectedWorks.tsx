@@ -30,12 +30,30 @@ export default function SelectedWorks({ lang }: SelectedWorksProps) {
             transition={{ duration: 0.5, delay: i * 0.15 }}
             whileHover={{ y: -6 }}
             onClick={() => setSelectedProject(project)}
-            className="group cursor-pointer"
+            className="group cursor-pointer h-full flex flex-col"
           >
             <div className="w-full h-[360px] bg-[#EFE5DC] rounded-[28px] border border-[#E0D2C5] mb-4 group-hover:shadow-lg transition-all duration-300 flex items-center justify-center text-[#9E8B7E] text-xs uppercase tracking-widest overflow-hidden relative">
-              <span className="group-hover:scale-105 transition-transform duration-300">
-                [ {project.title} Preview ]
-              </span>
+              {project.video ? (
+                <div className="w-full h-full overflow-hidden rounded-[2rem] bg-[#f2ebd9]">
+                  <video
+                    ref={(node) => {
+                      if (node) node.muted = true;
+                    }}
+                    src={project.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="auto"
+                    aria-label={`${project.title} demo`}
+                    className="w-full h-full object-fill rounded-[2rem] block"
+                  />
+                </div>
+              ) : (
+                <span className="group-hover:scale-105 transition-transform duration-300">
+                  [ {project.title} Preview ]
+                </span>
+              )}
             </div>
             {/* عنوان پروژه: اضافه شدن dark:text-[#EFE5DC] */}
             <h3 className="text-lg font-serif text-[#2C2825] dark:text-[#EFE5DC] group-hover:text-[#C86D51] dark:group-hover:text-[#C86D51] transition-colors">
@@ -44,6 +62,19 @@ export default function SelectedWorks({ lang }: SelectedWorksProps) {
             <p className="text-xs text-[#C86D51] font-semibold uppercase tracking-wider mt-1">
               {project.tag}
             </p>
+            <p className="text-sm text-[#5C534E] dark:text-[#C9BDB4] font-light leading-relaxed mt-2">
+              {project.shortDesc}
+            </p>
+            <button
+              type="button"
+              onClick={(event) => {
+                event.stopPropagation();
+                setSelectedProject(project);
+              }}
+              className="mt-4 self-start text-xs tracking-widest uppercase text-[#C86D51] border border-[#C86D51] px-4 py-2 rounded-full hover:bg-[#C86D51] hover:text-white transition-colors cursor-pointer"
+            >
+              {t.readMore}
+            </button>
           </motion.div>
         ))}
       </div>

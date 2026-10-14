@@ -36,7 +36,7 @@ export default function ProjectModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="relative w-full max-w-2xl bg-[#F9F5F0] rounded-[32px] border border-[#E5D5C8] shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col"
+            className={`relative bg-[#F9F5F0] rounded-[32px] border border-[#E5D5C8] shadow-2xl overflow-hidden z-10 max-h-[90vh] flex flex-col ${project.video ? "w-[90vw] max-w-5xl" : "w-full max-w-2xl"}`}
           >
             {/* Close Button */}
             <button
@@ -50,13 +50,29 @@ export default function ProjectModal({
             {/* Scrollable Container */}
             <div className="overflow-y-auto p-6 md:p-10 space-y-8 font-sans">
               {/* Image Preview */}
-              <div className="relative w-full h-[240px] md:h-[300px] rounded-[20px] overflow-hidden bg-[#EFE5DC] border border-[#E0D2C5]">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
+              <div className={`relative w-full overflow-hidden border border-[#E0D2C5] ${project.video ? "aspect-video rounded-[2rem] bg-[#f2ebd9]" : "h-[240px] md:h-[300px] rounded-[20px] bg-[#EFE5DC]"}`}>
+                {project.video ? (
+                  <video
+                    ref={(node) => {
+                      if (node) node.muted = true;
+                    }}
+                    src={project.video}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="auto"
+                    aria-label={`${project.title} demo`}
+                    className="h-full w-full object-contain bg-[#f2ebd9]"
+                  />
+                ) : project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                ) : null}
               </div>
 
               {/* Title & Tag */}

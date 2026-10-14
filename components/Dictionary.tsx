@@ -7,7 +7,8 @@ export interface Project {
   shortDesc: string;
   fullDesc: string;
   techStack: string[];
-  image: string;
+  image?: string;
+  video?: string;
   demoUrl?: string;
   githubUrl?: string;
 }
@@ -26,17 +27,19 @@ export const dictionary = {
     modalBtnDemo: "LIVE DEMO ANSEHEN",
     modalBtnGithub: "GITHUB CODE",
     modalClose: "Schließen",
+    readMore: "Mehr lesen",
     projects: [
       {
-        id: "ecommerce",
-        title: "E-Commerce Plattform",
-        tag: "Next.js / Tailwind",
-        shortDesc: "Moderne Online-Shop Benutzeroberfläche mit Warenkorb.",
-        fullDesc: "Eine performante E-Commerce-Anwendung mit responsivem Design, Produktfiltern, animiertem Warenkorb und schnellen Ladezeiten.",
-        techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion"],
-        image: "/Salimeh.png", // بعداً عکس پروژه واقعی رو بگذار
-        demoUrl: "https://example.com",
-        githubUrl: "https://github.com",
+        id: "designlens",
+        title: "DesignLens",
+        tag: "Next.js / Tailwind / Gemini API / Puppeteer",
+        shortDesc:
+          "KI-gestützter UI-Reviewer für visuelle Hierarchie, Kontrast und Typografie.",
+        fullDesc:
+          "DesignLens ist ein KI-gestützter UI-Reviewer. Ein Screenshot oder eine öffentliche URL genügt, und die Anwendung analysiert visuelle Hierarchie, Kontrast, Abstände und Typografie. Jede Bewertung liefert einen Gesamtscore, Scores je Achse und Hinweise darauf, was nicht stimmt, was sich ändern sollte und wo der Beleg auf dem Screen liegt. Screenshots werden direkt geprüft. Öffentliche URLs öffnet Puppeteer im Headless-Browser, danach formuliert die Gemini API die Kritik. Die Oberfläche ist auf Deutsch und Englisch verfügbar, und der API-Schlüssel verlässt den Server nicht.",
+        techStack: ["Next.js", "Tailwind", "Gemini API", "Puppeteer"],
+        video: "/designlens-demo.mp4",
+        githubUrl: "https://github.com/Salimeh1364/design-lens",
       },
       {
         id: "portfolio-brand",
@@ -75,17 +78,19 @@ export const dictionary = {
     modalBtnDemo: "VIEW LIVE DEMO",
     modalBtnGithub: "GITHUB REPO",
     modalClose: "Close",
+    readMore: "Read More",
     projects: [
       {
-        id: "ecommerce",
-        title: "E-Commerce Platform",
-        tag: "Next.js / Tailwind",
-        shortDesc: "Modern online store UI with dynamic cart system.",
-        fullDesc: "A high-performance e-commerce application featuring responsive layouts, product filtering, interactive cart state, and fast load times.",
-        techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion"],
-        image: "/Salimeh.png",
-        demoUrl: "https://example.com",
-        githubUrl: "https://github.com",
+        id: "designlens",
+        title: "DesignLens",
+        tag: "Next.js / Tailwind / Gemini API / Puppeteer",
+        shortDesc:
+          "AI-Powered UI Reviewer analyzing visual hierarchy, contrast, and typography.",
+        fullDesc:
+          "DesignLens is an AI-powered UI reviewer. Upload a screenshot or paste a public URL, and it analyzes visual hierarchy, contrast, spacing, and typography. Each review returns an overall score, scores for each axis, and notes on what is off, what to change, and where the evidence sits on the screen. Screenshots are reviewed directly. Public URLs are opened in a headless browser with Puppeteer, then critiqued by the Gemini API. The interface is available in English and German, and the API key never leaves the server.",
+        techStack: ["Next.js", "Tailwind", "Gemini API", "Puppeteer"],
+        video: "/designlens-demo.mp4",
+        githubUrl: "https://github.com/Salimeh1364/design-lens",
       },
       {
         id: "portfolio-brand",
