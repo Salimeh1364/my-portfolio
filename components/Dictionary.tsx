@@ -115,7 +115,7 @@ const designLensEn: Project = {
   title: "DesignLens",
   tag: "Next.js / TypeScript / Tailwind CSS",
   shortDesc:
-    "Responsive frontend with reusable components and an English/German language switch.",
+    "An AI-powered UI/UX design critique tool that helps improve website layouts and user experiences through actionable feedback.",
   fullDesc:
     "Responsive frontend application with reusable components and an English/German language switch, built with AI-assisted development and iterative refinement.",
   techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
@@ -127,7 +127,7 @@ const designLensEn: Project = {
 const designLensDe: Project = {
   ...designLensEn,
   shortDesc:
-    "Responsives Frontend mit wiederverwendbaren Komponenten und Sprachwechsel Englisch/Deutsch.",
+    "Ein KI-gestütztes UI/UX-Design-Kritik-Tool, das Website-Layouts und Nutzererlebnisse durch umsetzbares Feedback verbessert.",
   fullDesc:
     "Responsive Frontend-Anwendung mit wiederverwendbaren Komponenten und einem Sprachwechsel zwischen Englisch und Deutsch, entstanden mit KI-gestützter Entwicklung und schrittweiser Verfeinerung.",
 };
