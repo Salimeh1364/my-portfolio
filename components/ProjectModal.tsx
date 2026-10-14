@@ -51,6 +51,7 @@ export default function ProjectModal({
             {/* Scrollable Container */}
             <div className="overflow-y-auto p-6 md:p-10 space-y-8 font-sans">
               {/* Image Preview */}
+              {(project.video || project.image) && (
               <div className={`relative w-full overflow-hidden border border-[#E0D2C5] ${project.video ? "aspect-video rounded-[2rem] bg-[#f2ebd9]" : "h-[240px] md:h-[300px] rounded-[20px] bg-[#EFE5DC]"}`}>
                 {project.video ? (
                   <video
@@ -75,10 +76,16 @@ export default function ProjectModal({
                   />
                 ) : null}
               </div>
+              )}
 
               {/* Title & Tag */}
               <div className="space-y-2">
-                <span className="text-xs font-semibold tracking-widest text-[#C86D51] uppercase">
+                {project.status && (
+                  <span className="inline-flex rounded-full border border-[#D8C7B8] bg-[#EFE5DC] px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-[#5C534E]">
+                    {project.status}
+                  </span>
+                )}
+                <span className="block text-xs font-semibold tracking-widest text-[#C86D51] uppercase">
                   {project.tag}
                 </span>
                 <h3 className="text-3xl font-serif text-[#2C2825]">

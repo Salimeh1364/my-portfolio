@@ -54,6 +54,11 @@ export default function SelectedWorks({ lang }: SelectedWorksProps) {
                   [ {project.title} Preview ]
                 </span>
               )}
+              {project.status && (
+                <span className="absolute top-4 left-4 z-10 rounded-full border border-[#D8C7B8] bg-[#F9F5F0]/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-[#5C534E]">
+                  {project.status}
+                </span>
+              )}
             </div>
             {/* عنوان پروژه: اضافه شدن dark:text-[#EFE5DC] */}
             <h3 className="text-lg font-serif text-[#2C2825] dark:text-[#EFE5DC] group-hover:text-[#C86D51] dark:group-hover:text-[#C86D51] transition-colors">

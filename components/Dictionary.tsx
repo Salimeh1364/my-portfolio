@@ -11,6 +11,7 @@ export interface Project {
   video?: string;
   demoUrl?: string;
   githubUrl?: string;
+  status?: string;
 }
 
 export interface SkillGroup {
@@ -131,56 +132,54 @@ const designLensDe: Project = {
     "Responsive Frontend-Anwendung mit wiederverwendbaren Komponenten und einem Sprachwechsel zwischen Englisch und Deutsch, entstanden mit KI-gestützter Entwicklung und schrittweiser Verfeinerung.",
 };
 
-const portfolioBrandDe: Project = {
+const galleryDescriptionEn =
+  "An interactive 3D art gallery featuring immersive environments, smooth animations, and engaging visual experiences.";
+
+const applyFlowDescriptionEn =
+  "A personal job application tracker to organize applications, monitor progress, and visualize job search statistics.";
+
+const galleryDe: Project = {
   id: "portfolio-brand",
-  title: "Portfolio & Brand Design",
-  tag: "React / UI Design",
-  shortDesc: "Minimalistisches Portfolio für digitale Designer.",
+  title: "Immersive 3D Gallery",
+  tag: "Next.js / TypeScript / Three.js / React Three Fiber",
+  status: "In Arbeit",
+  shortDesc:
+    "Eine interaktive 3D-Kunstgalerie mit immersiven Umgebungen, flüssigen Animationen und ansprechenden visuellen Erlebnissen.",
   fullDesc:
-    "Ein maßgeschneidertes Portfolio-Design fokussiert auf Typografie, sanfte Übergänge und perfekte Barrierefreiheit.",
-  techStack: ["React", "Tailwind CSS", "Framer Motion"],
-  image: "/Salimeh.png",
-  demoUrl: "https://example.com",
-  githubUrl: "https://github.com",
+    "Eine interaktive 3D-Kunstgalerie mit immersiven Umgebungen, flüssigen Animationen und ansprechenden visuellen Erlebnissen.",
+  techStack: ["Next.js", "TypeScript", "Three.js", "React Three Fiber"],
 };
 
-const minimalAppDe: Project = {
+const applyFlowDe: Project = {
   id: "minimal-app",
-  title: "Minimalistische Web-App",
-  tag: "TypeScript / Web",
-  shortDesc: "Produktivitäts-Dashboard mit klaren Strukturen.",
+  title: "ApplyFlow",
+  tag: "Next.js / TypeScript / Supabase / Recharts",
+  status: "Demnächst",
+  shortDesc:
+    "Ein persönlicher Bewerbungstracker, um Bewerbungen zu organisieren, den Fortschritt zu verfolgen und Statistiken zur Jobsuche sichtbar zu machen.",
   fullDesc:
-    "Eine elegante Web-App zur Verwaltung von Aufgaben und Projekten mit intuitiver Benutzeroberfläche und Dark Mode Support.",
-  techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-  image: "/Salimeh.png",
-  demoUrl: "https://example.com",
-  githubUrl: "https://github.com",
+    "Ein persönlicher Bewerbungstracker, um Bewerbungen zu organisieren, den Fortschritt zu verfolgen und Statistiken zur Jobsuche sichtbar zu machen.",
+  techStack: ["Next.js", "TypeScript", "Supabase", "Recharts"],
 };
 
-const portfolioBrandEn: Project = {
+const galleryEn: Project = {
   id: "portfolio-brand",
-  title: "Portfolio & Brand Design",
-  tag: "React / UI Design",
-  shortDesc: "Minimalist portfolio showcasing creative design.",
-  fullDesc:
-    "A bespoke portfolio design with high emphasis on typography, smooth motion transitions, and accessibility.",
-  techStack: ["React", "Tailwind CSS", "Framer Motion"],
-  image: "/Salimeh.png",
-  demoUrl: "https://example.com",
-  githubUrl: "https://github.com",
+  title: "Immersive 3D Gallery",
+  tag: "Next.js / TypeScript / Three.js / React Three Fiber",
+  status: "In Progress",
+  shortDesc: galleryDescriptionEn,
+  fullDesc: galleryDescriptionEn,
+  techStack: ["Next.js", "TypeScript", "Three.js", "React Three Fiber"],
 };
 
-const minimalAppEn: Project = {
+const applyFlowEn: Project = {
   id: "minimal-app",
-  title: "Minimalist Web App",
-  tag: "TypeScript / Web",
-  shortDesc: "Productivity dashboard with clean UX.",
-  fullDesc:
-    "An elegant productivity web app for task and workflow management, designed with clean aesthetics and dark mode support.",
-  techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-  image: "/Salimeh.png",
-  demoUrl: "https://example.com",
-  githubUrl: "https://github.com",
+  title: "ApplyFlow",
+  tag: "Next.js / TypeScript / Supabase / Recharts",
+  status: "Coming Soon",
+  shortDesc: applyFlowDescriptionEn,
+  fullDesc: applyFlowDescriptionEn,
+  techStack: ["Next.js", "TypeScript", "Supabase", "Recharts"],
 };
 
 export const dictionary = {
@@ -218,7 +217,7 @@ export const dictionary = {
     experiences,
     education,
     languages,
-    projects: [designLensDe, portfolioBrandDe, minimalAppDe] as Project[],
+    projects: [designLensDe, galleryDe, applyFlowDe] as Project[],
   },
   en: {
     nav: { work: "Work", about: "About", contact: "Contact" },
@@ -254,6 +253,6 @@ export const dictionary = {
     experiences,
     education,
     languages,
-    projects: [designLensEn, portfolioBrandEn, minimalAppEn] as Project[],
+    projects: [designLensEn, galleryEn, applyFlowEn] as Project[],
   },
 };
