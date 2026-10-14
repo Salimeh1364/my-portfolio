@@ -7,6 +7,7 @@ import SelectedWorks from "../components/SelectedWorks";
 import About from "../components/About";
 import ProfileSections from "../components/ProfileSections";
 import Contact from "../components/Contact";
+import BackToTop from "../components/BackToTop";
 import { Language } from "../components/Dictionary";
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
         <About lang={lang} />
         <ProfileSections lang={lang} />
         <Contact lang={lang} />
+        <BackToTop lang={lang} />
       </main>
     </div>
   );

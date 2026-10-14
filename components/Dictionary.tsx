@@ -205,6 +205,7 @@ export const dictionary = {
     modalBtnGithub: "GITHUB",
     modalClose: "Schließen",
     readMore: "Mehr lesen",
+    backToTop: "Nach oben",
     skillGroups: [
       { title: "Frontend", items: skillItems.frontend },
       { title: "APIs & State", items: skillItems.apis },
@@ -241,6 +242,7 @@ export const dictionary = {
     modalBtnGithub: "GITHUB",
     modalClose: "Close",
     readMore: "Read More",
+    backToTop: "Back to top",
     skillGroups: [
       { title: "Frontend", items: skillItems.frontend },
       { title: "APIs & State", items: skillItems.apis },
