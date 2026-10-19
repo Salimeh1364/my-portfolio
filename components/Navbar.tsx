@@ -13,11 +13,7 @@ export default function Navbar({ lang, onLanguageChange }: NavbarProps) {
   const t = dictionary[lang].nav;
 
   return (
-    <nav className="flex justify-between items-center px-8 py-8 max-w-6xl mx-auto border-b border-[#E8DFC8] dark:border-[#3A3430]">
-      <span className="text-xl font-light tracking-[0.2em] text-[#2C2825] dark:text-[#F3ECE4] uppercase">
-        SALIMEH
-      </span>
-
+    <nav className="flex justify-end items-center px-8 py-8 max-w-6xl mx-auto border-b border-[#E8DFC8] dark:border-[#3A3430]">
       <div className="flex items-center gap-6 md:gap-10 font-sans text-xs tracking-widest uppercase text-[#5C534E] dark:text-[#D1C7BD]">
         <div className="hidden md:flex gap-8">
           <a
