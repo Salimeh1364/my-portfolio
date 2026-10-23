@@ -188,6 +188,10 @@ export const dictionary = {
     name: "Salimeh Miranipour",
     role: "Frontend Developer | React · JavaScript · TypeScript",
     location: "Berlin, Germany",
+    phone: "+49 176 75231260",
+    phoneHref: "tel:+4917675231260",
+    availability:
+      "Berechtigt zur Vollzeitbeschäftigung in Deutschland | Offen für einen Umzug innerhalb Deutschlands",
     subtitle: "Frontend Developer | React · JavaScript · TypeScript",
     title: "Salimeh Miranipour",
     desc: "Frontend-Entwicklerin mit fast vier Jahren Erfahrung im Aufbau von React-Dashboards, Single-Page-Applications und wiederverwendbaren UI-Komponenten, mit REST-API-Anbindung und Umsetzung von Figma in Code.",
@@ -225,6 +229,10 @@ export const dictionary = {
     name: "Salimeh Miranipour",
     role: "Frontend Developer | React · JavaScript · TypeScript",
     location: "Berlin, Germany",
+    phone: "+49 176 75231260",
+    phoneHref: "tel:+4917675231260",
+    availability:
+      "Authorized for full-time work in Germany | Open to relocation within Germany",
     subtitle: "Frontend Developer | React · JavaScript · TypeScript",
     title: "Salimeh Miranipour",
     desc: "Frontend Developer with almost four years of experience building React dashboards, single-page applications and reusable UI components, with REST API integration and Figma-to-code work.",
