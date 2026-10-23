@@ -30,14 +30,6 @@ export default function Hero({ lang }: HeroProps) {
 
         <div className="font-sans text-sm tracking-wide text-[#6B6059] dark:text-[#D1C7BD] space-y-1">
           <p>{t.location}</p>
-          <p>
-            <a
-              href={t.phoneHref}
-              className="hover:text-[#C86D51] dark:hover:text-[#E07A5F] transition-colors"
-            >
-              {t.phone}
-            </a>
-          </p>
           <p>{t.availability}</p>
         </div>
 

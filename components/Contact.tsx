@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { dictionary, Language } from "./Dictionary";
+import { Language } from "./Dictionary";
 
 interface ContactProps {
   lang: Language;
@@ -9,7 +9,6 @@ interface ContactProps {
 
 export default function Contact({ lang }: ContactProps) {
   const isDe = lang === "de";
-  const t = dictionary[lang];
 
   return (
     <section id="contact" className="bg-[#EFE5DC] py-24 border-t border-[#E5D5C8]">
@@ -47,12 +46,6 @@ export default function Contact({ lang }: ContactProps) {
             className="bg-[#2C2825] text-white px-8 py-4 rounded-full hover:bg-[#C86D51] transition duration-300 shadow-md"
           >
             {isDe ? "E-Mail Senden" : "Send an Email"}
-          </a>
-          <a
-            href={t.phoneHref}
-            className="border border-[#2C2825] text-[#2C2825] px-8 py-4 rounded-full hover:bg-[#E2D5C8] transition"
-          >
-            {t.phone}
           </a>
           <a
             href="https://www.linkedin.com/in/salimeh-miranipour/"

@@ -188,8 +188,6 @@ export const dictionary = {
     name: "Salimeh Miranipour",
     role: "Frontend Developer | React · JavaScript · TypeScript",
     location: "Berlin, Germany",
-    phone: "+49 176 75231260",
-    phoneHref: "tel:+4917675231260",
     availability:
       "Berechtigt zur Vollzeitbeschäftigung in Deutschland | Offen für einen Umzug innerhalb Deutschlands",
     subtitle: "Frontend Developer | React · JavaScript · TypeScript",
@@ -229,8 +227,6 @@ export const dictionary = {
     name: "Salimeh Miranipour",
     role: "Frontend Developer | React · JavaScript · TypeScript",
     location: "Berlin, Germany",
-    phone: "+49 176 75231260",
-    phoneHref: "tel:+4917675231260",
     availability:
       "Authorized for full-time work in Germany | Open to relocation within Germany",
     subtitle: "Frontend Developer | React · JavaScript · TypeScript",
