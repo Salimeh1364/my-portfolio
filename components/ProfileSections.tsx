@@ -72,6 +72,26 @@ export default function ProfileSections({ lang }: ProfileSectionsProps) {
               </li>
             ))}
           </ol>
+          <h3 className="text-xl font-light tracking-widest uppercase text-center text-[#2C2825] mt-20 mb-12">
+            {t.additionalExperienceTitle}
+          </h3>
+          <ol className="space-y-12 font-sans">
+            {t.additionalExperiences.map((job) => (
+              <li key={`${job.role}-${job.meta}`}>
+                <article>
+                  <h3 className="text-xl font-serif text-[#2C2825]">{job.role}</h3>
+                  <p className="text-sm text-[#C86D51] mt-1">{job.meta}</p>
+                  {job.points.length > 0 && (
+                    <ul className="mt-4 space-y-2 text-[#5C534E] text-base leading-relaxed font-light list-disc pl-5">
+                      {job.points.map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
+                  )}
+                </article>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -89,6 +109,14 @@ export default function ProfileSections({ lang }: ProfileSectionsProps) {
           </h2>
           <ul className="space-y-4 font-sans text-[#5C534E] dark:text-[#D1C7BD] text-base leading-relaxed font-light">
             {t.education.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <h3 className="text-xs font-sans font-semibold tracking-widest uppercase text-[#C86D51] mt-16 mb-4">
+            {t.certificatesTitle}
+          </h3>
+          <ul className="space-y-2 font-sans text-[#5C534E] dark:text-[#D1C7BD] text-base leading-relaxed font-light">
+            {t.certificates.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>

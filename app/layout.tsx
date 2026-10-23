@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Salimeh Miranipour | Frontend Developer",
   description:
-    "Frontend Developer in Berlin with almost four years of experience building React dashboards, single-page applications and reusable UI components.",
+    "Frontend Developer in Berlin with 4 years of experience building React dashboards, single-page applications and reusable UI components.",
   keywords: [
     "Frontend Developer",
     "React",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Salimeh Miranipour | Frontend Developer",
     description:
-      "Frontend Developer in Berlin with almost four years of experience building React dashboards, single-page applications and reusable UI components.",
+      "Frontend Developer in Berlin with 4 years of experience building React dashboards, single-page applications and reusable UI components.",
     type: "website",
   },
   icons: {

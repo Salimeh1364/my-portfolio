@@ -36,37 +36,34 @@ const skillItems = {
     "Tailwind CSS",
     "responsive design",
   ],
-  apis: ["REST APIs", "Axios", "Context API", "Redux (basic)"],
+  apis: ["REST APIs", "Axios", "Context API", "Gemini API (DesignLens)"],
   ui: ["Material UI", "Ant Design", "Bootstrap", "Figma"],
   tools: ["Git", "GitHub", "Postman", "npm", "VS Code", "Agile/Scrum"],
+  testing: [
+    "Automated testing and GitHub Actions CI (in current portfolio projects)",
+  ],
   ai: [
     "AI coding tools for implementation support, debugging and code refinement",
   ],
-  testing: [
-    "Currently building hands-on experience with automated testing and GitHub Actions",
-  ],
-  additional: ["WordPress (CMS basics)"],
 };
 
 const experiences: Experience[] = [
   {
-    role: "Gastronomy Staff (Part-Time)",
-    meta: "Intercity Hotel, Berlin, Germany | May 2025 – Present",
+    role: "Self-study & Portfolio Projects",
+    meta: "Aug 2026 – Present",
     points: [
-      "Support day-to-day kitchen operations in a fast-paced team environment, communicating in German.",
+      "Building and extending portfolio projects, including a 3D gallery and new features for DesignLens.",
+      "Adding automated testing and GitHub Actions CI to these projects.",
+      "Preparing for the telc German B1 exam; B2 course planned.",
     ],
-  },
-  {
-    role: "Relocation to Germany",
-    meta: "Feb 2025",
-    points: [],
   },
   {
     role: "Frontend Developer",
     meta: "Anamis Electronic Vira Co., Iran | Feb 2024 – Aug 2024",
     points: [
-      "Built and maintained a React dashboard for a vehicle license-plate recognition platform using Material UI and Ant Design.",
-      "Integrated REST APIs with Axios for data synchronization; implemented location-based filtering and frontend flows for secure payment functionality.",
+      "Built and maintained the React dashboard of a traffic-control platform that detects vehicle license plates, using Material UI and Ant Design.",
+      "Connected the dashboard to REST APIs (Axios) to keep data in sync, and added location-based filtering.",
+      "Implemented frontend flows for secure payments.",
       "Tech: React, JavaScript, Material UI, Ant Design, Axios, REST APIs",
     ],
   },
@@ -74,8 +71,8 @@ const experiences: Experience[] = [
     role: "Freelance Frontend Developer",
     meta: "Remote, Iran | Dec 2022 – Jan 2024",
     points: [
-      "Developed a React single-page application for a virtual restaurant platform.",
-      "Built responsive, mobile-first interfaces with Bootstrap and Ant Design, connected to backend services for dynamic menu updates and order processing.",
+      "Built a React single-page app for a virtual restaurant platform, with responsive, mobile-first design.",
+      "Connected the app to backend services for menu updates and order processing.",
       "Tech: React, JavaScript, Bootstrap, Ant Design, REST APIs",
     ],
   },
@@ -83,8 +80,8 @@ const experiences: Experience[] = [
     role: "Frontend Developer",
     meta: "Space Time Hormozgan Co., Iran | Sep 2020 – Nov 2022",
     points: [
-      "Developed responsive React features and reusable UI components, including API communication and state handling.",
-      "Translated Figma mockups into maintainable frontend code in collaboration with UI/UX designers.",
+      "Built responsive React features and reusable UI components for a waste-collection management web panel for a client company, including a location map, separate views for managers and drivers, and a scheduling table to register and send collection requests and track their status.",
+      "Handled API communication and state handling; turned Figma designs into clean frontend code together with UI/UX designers.",
       "Tech: React, JavaScript, Figma, REST APIs",
     ],
   },
@@ -95,19 +92,38 @@ const experiences: Experience[] = [
       "Provided hardware and software support in Windows environments, including user account onboarding and troubleshooting.",
     ],
   },
+  {
+    role: "Family period (childcare)",
+    meta: "2013 – 2017",
+    points: [],
+  },
+];
+
+const additionalExperiences: Experience[] = [
+  {
+    role: "Gastronomy Staff (Part-Time)",
+    meta: "Intercity Hotel, Berlin, Germany | May 2025 – Present",
+    points: [
+      "Support day-to-day kitchen operations in a fast-paced team, communicating with colleagues in German.",
+      "Reliable, organized work with clear time management during busy shifts.",
+    ],
+  },
 ];
 
 const education = [
-  "MSc in Information Technology Management — Berlin School of Business and Innovation (BSBI), Berlin | Oct 2024 – Aug 2026 (first term online from Iran); official certificate pending",
+  "MSc in Information Technology Management — Berlin School of Business and Innovation (BSBI), Berlin | Oct 2024 – Aug 2026 | First term online from Iran, moved to Berlin in Feb 2025 | Official certificate pending",
   "MSc in Computer Cognition Technology — University of Mysore, India | 2011 – Jun 2013",
-  "Bachelor's in Computer Software Engineering — University of Science and Application, Iran",
-  "Vocational Training in Web Development",
+  "BSc in Computer Software Engineering — University of Science and Application, Iran | 2007 – 2010",
+];
+
+const certificates = [
+  "Web Development Course (54 hours) | Certificate: 27 Jan 2020",
 ];
 
 const languages = [
   "Persian / Farsi: Native",
   "English: Fluent",
-  "German: B1 (intermediate)",
+  "German: B1 (telc exam upcoming, B2 planned)",
 ];
 
 const designLensEn: Project = {
@@ -192,16 +208,18 @@ export const dictionary = {
       "Berechtigt zur Vollzeitbeschäftigung in Deutschland | Offen für einen Umzug innerhalb Deutschlands",
     subtitle: "Frontend Developer | React · JavaScript · TypeScript",
     title: "Salimeh Miranipour",
-    desc: "Frontend-Entwicklerin mit fast vier Jahren Erfahrung im Aufbau von React-Dashboards, Single-Page-Applications und wiederverwendbaren UI-Komponenten, mit REST-API-Anbindung und Umsetzung von Figma in Code.",
+    desc: "Frontend-Entwicklerin mit 4 Jahren Erfahrung im Aufbau von React-Dashboards, Single-Page-Applications und wiederverwendbaren UI-Komponenten, mit REST-API-Anbindung und Umsetzung von Figma in Code.",
     btnWork: "PROJEKTE SEHEN",
     btnContact: "KONTAKT",
     projectsTitle: "AUSGEWÄHLTE ARBEITEN",
     aboutTitle: "ÜBER MICH",
     aboutDesc:
-      "Frontend-Entwicklerin mit fast vier Jahren Erfahrung im Aufbau von React-Dashboards, Single-Page-Applications und wiederverwendbaren UI-Komponenten, mit REST-API-Anbindung und Umsetzung von Figma in Code. Zurzeit vertiefe ich TypeScript, Testing und CI/CD in eigenen Projekten und setze KI-Werkzeuge ein, um die Entwicklung zu beschleunigen, wobei ich den gesamten Code prüfe. MSc in IT Management (BSBI Berlin, Aug 2026). Fließendes Englisch, Deutsch B1.",
+      "Frontend-Entwicklerin mit 4 Jahren Erfahrung im Aufbau von React-Dashboards, Single-Page-Applications und wiederverwendbaren UI-Komponenten, mit REST-API-Anbindung und Umsetzung von Figma in Code. DesignLens ist eine zweisprachige (EN/DE) Next.js- und TypeScript-Anwendung, die die Gemini API für KI-basierte UI-Kritik nutzt; weitere Portfolio-Projekte, darunter eine 3D-Galerie, sind in Arbeit. MSc in IT Management (BSBI Berlin, 2026). Fließendes Englisch, Deutsch B1 (telc-Prüfung steht bevor, B2 geplant).",
     skillsTitle: "KENNTNISSE",
     experienceTitle: "BERUFSERFAHRUNG",
+    additionalExperienceTitle: "WEITERE BERUFSERFAHRUNG",
     educationTitle: "AUSBILDUNG",
+    certificatesTitle: "ZERTIFIKATE & KURSE",
     languagesTitle: "SPRACHEN",
     modalBtnDemo: "LIVE DEMO ANSEHEN",
     modalBtnGithub: "GITHUB",
@@ -213,12 +231,13 @@ export const dictionary = {
       { title: "APIs & State", items: skillItems.apis },
       { title: "UI & Design", items: skillItems.ui },
       { title: "Tools & Workflow", items: skillItems.tools },
-      { title: "KI-gestützte Entwicklung", items: skillItems.ai },
       { title: "Testing & CI/CD", items: skillItems.testing },
-      { title: "Weiteres", items: skillItems.additional },
+      { title: "KI-gestützte Entwicklung", items: skillItems.ai },
     ] as SkillGroup[],
     experiences,
+    additionalExperiences,
     education,
+    certificates,
     languages,
     projects: [designLensDe, galleryDe, applyFlowDe] as Project[],
   },
@@ -231,16 +250,18 @@ export const dictionary = {
       "Authorized for full-time work in Germany | Open to relocation within Germany",
     subtitle: "Frontend Developer | React · JavaScript · TypeScript",
     title: "Salimeh Miranipour",
-    desc: "Frontend Developer with almost four years of experience building React dashboards, single-page applications and reusable UI components, with REST API integration and Figma-to-code work.",
+    desc: "Frontend Developer with 4 years of experience building React dashboards, single-page applications and reusable UI components, with REST API integration and Figma-to-code work.",
     btnWork: "VIEW WORK",
     btnContact: "GET IN TOUCH",
     projectsTitle: "SELECTED WORKS",
     aboutTitle: "ABOUT ME",
     aboutDesc:
-      "Frontend Developer with almost four years of experience building React dashboards, single-page applications and reusable UI components, with REST API integration and Figma-to-code work. Currently deepening TypeScript, testing and CI/CD through hands-on projects, and using AI tools to speed up development while reviewing all code. MSc in IT Management (BSBI Berlin, Aug 2026). Fluent English, German B1.",
+      "Frontend Developer with 4 years of experience building React dashboards, single-page applications and reusable UI components, with REST API integration and Figma-to-code work. Built DesignLens, a bilingual (EN/DE) Next.js and TypeScript app that uses the Gemini API for AI-based UI critique, and currently working on further portfolio projects, including a 3D gallery. MSc in IT Management (BSBI Berlin, 2026). Fluent English, German B1 (telc exam upcoming, B2 planned).",
     skillsTitle: "SKILLS",
     experienceTitle: "EXPERIENCE",
+    additionalExperienceTitle: "ADDITIONAL WORK EXPERIENCE",
     educationTitle: "EDUCATION",
+    certificatesTitle: "CERTIFICATES & COURSES",
     languagesTitle: "LANGUAGES",
     modalBtnDemo: "VIEW LIVE DEMO",
     modalBtnGithub: "GITHUB",
@@ -252,12 +273,13 @@ export const dictionary = {
       { title: "APIs & State", items: skillItems.apis },
       { title: "UI & Design", items: skillItems.ui },
       { title: "Tools & Workflow", items: skillItems.tools },
-      { title: "AI-assisted development", items: skillItems.ai },
       { title: "Testing & CI/CD", items: skillItems.testing },
-      { title: "Additional", items: skillItems.additional },
+      { title: "AI-assisted development", items: skillItems.ai },
     ] as SkillGroup[],
     experiences,
+    additionalExperiences,
     education,
+    certificates,
     languages,
     projects: [designLensEn, galleryEn, applyFlowEn] as Project[],
   },
